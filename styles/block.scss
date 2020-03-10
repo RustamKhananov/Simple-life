@@ -1,0 +1,109 @@
+
+@import "var";
+
+.block {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+  width: 100%;
+
+  #deco {
+    
+    background-image: url("../img/deco.jpg");
+    @media screen and (min-width: 1005px) {
+      background-position: left;
+    }
+}
+
+  #work {
+    background-image: url("../img/work.jpg");
+  }
+
+  #food {
+    background-image: url("../img/food.jpg");
+  }
+
+  #life {
+    background-image: url("../img/life.jpg");
+  }
+
+  
+  &__img {
+    width: 100%;
+    height: 242px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 1005px) {
+      width: 199px;
+    }
+  }
+
+  &__comment {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #707070;
+  }
+
+  &__title {
+    font-family: Lora, sans-serif;
+    font-size: 24px;
+    color: #143774;
+  }
+
+  &__text {
+    font-family: Ubuntu, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #707070;
+  }
+
+  &__continue {
+    font-family: Ubuntu, sans-serif;
+    letter-spacing: 2.8px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1792d2;
+  }
+
+  &__link {
+    font-family: Ubuntu, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #1792d2;
+    
+  }
+
+  @media screen and (min-width: 1005px) {
+    flex-direction: row;
+    width: 714px;
+
+    &__wraper2 {
+      margin-left: 27px;
+    }
+
+    &__img {
+      height: 242px;
+    }
+  }
+
+  &--first {
+    @media screen and (min-width: 1005px) {
+      flex-direction: column;
+      width: 714px;
+
+      .block__img {
+        height: 308px;
+        width: 100%;
+      }
+
+      .block__wraper2 {
+        margin-left: 0;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,196 @@
+.side-block {
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  border: 20px solid #ebebeb;
+  background-color: white;
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  color: #143774;
+}
+.side-block__img-container {
+  width: 100%;
+  height: 133px;
+  background-image: url("../img/about-me.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.side-block__link {
+  text-decoration: none;
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #1792d2;
+}
+.side-block--posts :nth-child(1) .side-block__img-container {
+  background-image: url(../img/food.jpg);
+}
+.side-block--posts :nth-child(2) .side-block__img-container {
+  background-image: url(../img/work.jpg);
+  background-position: bottom;
+}
+.side-block--posts :nth-child(3) .side-block__img-container {
+  background-image: url(../img/deco.jpg);
+}
+.side-block--posts .side-block__img-container {
+  height: 197px;
+  margin: 20px 0;
+}
+.side-block--posts .side-block__link {
+  font-family: Lora, sans-serif;
+  font-size: 18px;
+  color: #143774;
+}
+
+.block {
+  padding: 40px 0;
+  display: block;
+  overflow: auto;
+  border-bottom: 1px solid #707070;
+}
+.block__img {
+  width: 100%;
+}
+.block__comment {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #707070;
+}
+.block__title {
+  font-family: Lora, sans-serif;
+  font-size: 24px;
+  color: #143774;
+}
+.block__text {
+  font-family: Ubuntu, sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: #707070;
+}
+.block__continue {
+  font-family: Ubuntu, sans-serif;
+  letter-spacing: 2.8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1792d2;
+}
+.block__link {
+  font-family: Ubuntu, sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: #1792d2;
+}
+
+.header {
+  border: 1px solid #f8f8f8;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  height: 330px;
+}
+@media (min-width: 1000px) {
+  .header {
+    height: 265px;
+  }
+}
+.header__container {
+  max-width: 1005px;
+  height: 330px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 265px;
+  }
+}
+.header__title {
+  display: inline-block;
+  text-align: center;
+  color: #143774;
+  font-weight: normal;
+  font-family: Lora, serif;
+  font-size: 33px;
+  line-height: 42px;
+  letter-spacing: 0;
+  position: relative;
+}
+.header__title:after {
+  display: block;
+  text-align: center;
+  content: "A blog exploring minimalism in life";
+  text-transform: uppercase;
+  top: 33px;
+  left: 0;
+  font-family: Ubuntu, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 13px;
+  color: #1792d2;
+  letter-spacing: 2.3px;
+}
+.header__list {
+  display: flex;
+  flex-direction: column;
+  height: 126px;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 40px auto;
+}
+@media screen and (min-width: 1000px) {
+  .header__list {
+    flex-direction: row;
+    width: 394px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__link {
+  position: relative;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  letter-spacing: 3.2px;
+  color: #717171;
+  text-decoration: none;
+}
+.header__link:hover {
+  border-bottom: 2px solid #717171;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.content {
+  background-color: white;
+  width: 518px;
+  margin: 0 auto;
+  padding: 18px 20px;
+}
+@media (min-width: 1005px) {
+  .content {
+    width: 1005px;
+  }
+}
+.content__block {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.scc.map */
